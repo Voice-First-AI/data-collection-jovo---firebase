@@ -1,6 +1,9 @@
-# Jovo Template: Hello World
+# Jovo + Voice First: Data Collection
 
 This template contains a Jovo Sample Voice App with a simple "Hello World!" greeting, asking for the user's name and returning a personalised message. This is the default template for the `jovo new` command.
+
+Voice First Addition:
+All Session data is stored in Firebase using their Firestore offering.
 
 ## Quick Start
 
@@ -13,22 +16,11 @@ $ npm install -g jovo-cli
 After successfully installing the Jovo CLI, you can install the template using one of the following commands:
 
 ```sh
-$ jovo new <directory>
+$ git clone https://github.com/Voice-First-AI/data-collection-jovo---firebase.git
 
-## Alternative
-$ jovo new <directory> --template helloworld
-```
+$ cd data-collection-middleware-hook
 
-> Read more about `jovo new` [here](https://www.jovo.tech/marketplace/jovo-cli#jovo-new).
-
-Change your working directory into your newly created project directory and run your voice app:
-
-```sh
-# Change working directory to your previously specified directory.
-$ cd <directory>
-
-# Install dependencies.
-$ npm install
+$ npm i
 
 # Run voice app, optionally with a --watch flag to restart on code changes.
 $ jovo run [-w]
