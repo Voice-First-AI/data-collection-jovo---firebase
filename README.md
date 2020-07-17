@@ -1,13 +1,10 @@
 # Jovo + Voice First: Data Collection
 
-This template contains a Jovo Sample Voice App with a simple "Hello World!" greeting, asking for the user's name and returning a personalised message. This is the default template for the `jovo new` command.
-
-Voice First Addition:
-All Session data is stored in Firebase using their Firestore offering.
-
 ## Quick Start
 
-To use the Jovo Templates, you'll need the Jovo CLI. You can install it globally with NPM.
+## Use this as your Starter Project
+
+You'll need the Jovo CLI. You can install it globally with NPM.
 
 ```sh
 $ npm install -g jovo-cli
@@ -21,10 +18,20 @@ $ git clone https://github.com/Voice-First-AI/data-collection-jovo---firebase.gi
 $ cd data-collection-middleware-hook
 
 $ npm i
+```
+
+Run your Jovo Application Locally
+```
 
 # Run voice app, optionally with a --watch flag to restart on code changes.
 $ jovo run [-w]
 ```
+
+## Integrating Into existing Jovo Apps
+1. Copy Middleware hook from bottom of [app.js](https://github.com/Voice-First-AI/data-collection-jovo---firebase/blob/master/src/app.js).
+2. Copy Firebase Initialization from  top of [app.js](https://github.com/Voice-First-AI/data-collection-jovo---firebase/blob/master/src/app.js).
+3. Add `serviceAccountKey.json` to your `src/` folder.
+4. `jovo run`
 
 > Read more about `jovo run` [here](https://www.jovo.tech/marketplace/jovo-cli#jovo-run).
 
